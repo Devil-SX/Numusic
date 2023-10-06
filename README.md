@@ -1,8 +1,11 @@
 # Numusic
 
+![Static Badge](https://img.shields.io/badge/python-%3E%3D3.10-blue?logo=python&labelColor=%23F7DF1E)
+
+
+
 Utilize mathematical operators to manipulate music!
 
-Python>=10
 
 # Play a chord
 
