@@ -39,11 +39,15 @@ class Note:
         return temp
 
     def __add__(self, note: Note) -> Note:
+        assert self.duration == note.duration, "Duration must be the same."
+        assert self.sample_rate == note.sample_rate, "Sample rate must be the same."
         temp = copy.deepcopy(self)
         temp.wave = temp.wave + note.wave
         return temp
 
     def __sub__(self, note: Note) -> Note:
+        assert self.duration == note.duration, "Duration must be the same."
+        assert self.sample_rate == note.sample_rate, "Sample rate must be the same."
         temp = copy.deepcopy(self)
         temp.wave = temp.wave - note.wave
         return temp
